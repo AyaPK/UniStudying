@@ -5,6 +5,9 @@ inputLabels = "ABCD"
 inputs = input("How many inputs? ")
 topRow = ""
 
+if int(inputs) > 4 or int(inputs) < 1:
+    while int(inputs) > 4 or int(inputs) < 1:
+        inputs = input("Please choose between 1 and 4: ")
 
 def makeBinary():
     binary = list(itertools.product(["0", "1"], repeat=int(inputs)))
