@@ -45,3 +45,4 @@ while trying:
             continue
         else:
             break
+close = input("Press enter to close")
